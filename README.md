@@ -1,7 +1,7 @@
 # Marain App
 
 This app visualizes scenarios from Marain's autonomous vehicle model using Deck GL, Mapbox GL, Antd and Highcharts.
-Data is pulled from static json files in `/public/data`.
+Data is pulled from static json files in `/src/public/data`.
 
 ## Develop
 
