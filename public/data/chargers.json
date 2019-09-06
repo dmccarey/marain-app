@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Hunters Point",
+    "timeSeriesDataFileName": "chargingStationTimeSeriesData_0.csv",
+    "xCoordinate": -122.37679663286185,
+    "yCoordinate": 37.740528428327806
+  },
+  {
+    "name": "Martin",
+    "timeSeriesDataFileName": "chargingStationTimeSeriesData_1.csv",
+    "xCoordinate": -122.41037000000003,
+    "yCoordinate": 37.70828299999997
+  }
+]

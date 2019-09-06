@@ -1,0 +1,9 @@
+.time {
+  position: fixed;
+  left: 40px;
+  bottom: 110px;
+  font-weight: bold;
+  color: #fff;
+  z-index: 100;
+  font-size: 30px;
+}

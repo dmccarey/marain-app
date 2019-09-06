@@ -1,0 +1,27 @@
+.logo {
+  position: absolute;
+  left: 40px;
+  top: 25px;
+  width: 150px;
+  height: 50px;
+  z-index: 1000;
+  background: url('/assets/logo.png') no-repeat center center;
+  background-size: contain;
+  text-indent: -9999px;
+}
+.marain-map {
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+}
+.marain-map-origins {
+  left: 0;
+  top: 0;
+}
+.marain-map h2 {
+  position: absolute;
+  right: 40px;
+  z-index: 100;
+  color: #fff;
+  top: 40px;
+}
