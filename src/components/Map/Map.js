@@ -19,13 +19,13 @@ class MarainMap extends Component {
    }
   }
 
-  onChange(value) {
+  _onChange(value) {
     this.setState({
       currentTime: value
     })
   }
 
-  handlePlayback(e) {
+  _handlePlayback(e) {
     var _self = this
     if (_self.state.playing === true) {
       clearInterval(window.playing)
@@ -52,7 +52,7 @@ class MarainMap extends Component {
    }
   }
 
-  setTime(seconds) {
+  _setTime(seconds) {
     var time = toReadableTime(seconds)
     if (time.hours === '0') {
       time.hours = '12'
@@ -73,12 +73,12 @@ class MarainMap extends Component {
           max={this.state.maxSeconds}
           min={ 0 }
           value={ this.state.currentTime }
-          onChange={ this.onChange.bind(this) }
-          tipFormatter={ this.setTime }
+          onChange={ this._onChange.bind(this) }
+          tipFormatter={ this._setTime }
         />
         <button
           className="btn-play"
-          onClick={ this.handlePlayback.bind(this) }
+          onClick={ this._handlePlayback.bind(this) }
         >
         { this.state.playing ? (
           <Icon type="pause" />
@@ -93,7 +93,7 @@ class MarainMap extends Component {
         Trajectories
         </Link>
         </div>
-        <div className="time">{ this.setTime(this.state.currentTime) }</div>
+        <div className="time">{ this._setTime(this.state.currentTime) }</div>
       </div>
     )
   }
